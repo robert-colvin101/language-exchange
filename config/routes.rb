@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'lessons/references'
+  get 'lessons/users'
   devise_for :users
   resources :restaurants
   root to: 'pages#home'
