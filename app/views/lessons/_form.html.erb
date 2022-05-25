@@ -1,0 +1,5 @@
+<%= simple_form_for [@user, @lesson], html: { class: "edit_form"} do |f| %>
+  <%= f.input :lesson_start, as: :datetime, html5: true %>
+  <%= f.input :lesson_end, as: :datetime, html5: true %>
+  <%= f.submit "Reserve", class: "btn-search btn-search-index" %>
+<% end %>
