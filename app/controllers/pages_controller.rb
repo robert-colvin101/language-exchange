@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def profile
-    @properties = Properties.all
+    @lessons = Lesson.all
   end
 
   def contact
