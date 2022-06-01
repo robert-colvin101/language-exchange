@@ -1,11 +1,11 @@
-<%= if current_user.lesson.size < 1 %>
+<% if current_user.lessons.size < 1 %>
 <p> You currently have no lessons</p>
-  <%= else %>
+  <% else %>
     <%= current_user.lesson.each do |lesson| %>
       <div class="container">
       <%= link_to lesson_path(lesson)  %>
       <%=  lesson.starttime %>
      <%= lesson.language %>
      </div>
- <% end %>
- <% end %>
+  <% end %>
+<% end %>

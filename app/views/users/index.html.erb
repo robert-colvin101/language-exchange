@@ -1,0 +1,6 @@
+<h2>Discover our range of teachers now</h2>
+<ul>
+  <% @users.each do |user| %>
+    <p><%= user.email %></p>
+  <% end %>
+</ul>
